@@ -1,0 +1,136 @@
+body {
+    background-color: rgba(128, 128, 128, 0.165);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px;
+    position: relative;
+    top: -10px;
+    right: 45px;
+}
+
+hr {
+    width: 15vw;
+}
+
+.left-card {
+    background-color: white;
+    height: 45vh;
+    width: 18vw;
+    position: relative;
+    top: 20px;
+    border-radius: 6px;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.179);
+    text-align: center;
+}
+
+.left-card button {
+    background-image: linear-gradient(to right, rgb(202, 182, 202), rgb(153, 122, 152));
+    border: none;
+    border-radius: 3px;
+    padding: 6px 60px;
+    color: white;
+}
+
+.middle-card {
+    background-image: linear-gradient(to bottom, rgb(202, 182, 202), rgb(153, 122, 152));
+    height: 47vh;
+    width: 20vw;
+    border-radius: 6px;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.179);
+    text-align: center;
+    padding: 17px 0px;
+}
+
+.middle-card button {
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 60px;
+    color: black;
+}
+
+.right-card {
+    background-color: white;
+    height: 45vh;
+    width: 18vw;
+    position: relative;
+    top: 20px;
+    border-radius: 6px;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.179);
+    text-align: center;
+}
+
+.right-card button {
+    background-image: linear-gradient(to right, rgb(202, 182, 202), rgb(153, 122, 152));
+    border: none;
+    border-radius: 3px;
+    padding: 6px 60px;
+    color: white;
+}
+
+.main-background .sub-background .options {
+    text-align: center;
+}
+
+.main-background .sub-background .options .heading {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.sub-background {
+    background-color: rgba(237, 211, 237, 0.289);
+    height: 75vh;
+    padding: 40px 300px;
+    box-shadow: 0 10px  20px 10px rgba(0, 0, 0, 0.179);
+}
+
+.switch-header {
+    font-size: 15px;
+}
+
+.switch {
+    position: relative;
+    top: -42px;
+    right: 5px;
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    border-radius: 34px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(177, 147, 176);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
